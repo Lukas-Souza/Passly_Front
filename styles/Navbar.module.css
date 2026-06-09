@@ -1,0 +1,145 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  
+  right: 0;
+  height: 64px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+  width: 100%;
+  box-shadow: var(--shadow-sm);
+}
+
+.brand {
+  display: none;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.brandName {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.menuBtn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.menuBtn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--gray-700);
+  border-radius: 2px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
+}
+
+.navLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: color 0.15s;
+}
+
+.navLink:hover {
+  color: var(--blue);
+}
+
+.navLinkPrimary {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--blue);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  transition: background 0.15s;
+}
+
+.navLinkPrimary:hover {
+  background: var(--blue-dark);
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.logoutBtn {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-500);
+  background: none;
+  border: 1px solid var(--gray-200);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+}
+
+.logoutBtn:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    left: 0;
+    padding: 0 16px;
+  }
+
+  .brand {
+    display: flex;
+  }
+
+  .menuBtn {
+    display: flex;
+  }
+
+  .actions {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-200);
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    box-shadow: var(--shadow-md);
+  }
+
+  .actions.open {
+    display: flex;
+  }
+
+  .userMenu {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,238 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.greeting {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.subGreeting {
+  font-size: 14px;
+  color: var(--gray-500);
+}
+
+.checkinBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: var(--radius);
+  transition: all 0.15s;
+}
+
+.checkinBtn:hover {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16,185,129,0.35);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 20px;
+  align-items: start;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-100);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.seeAll {
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.visitList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.visitItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.visitItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.visitImg {
+  width: 56px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.visitInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.visitNome {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.visitCidade {
+  font-size: 12px;
+  color: var(--gray-500);
+}
+
+.visitData {
+  font-size: 12px;
+  color: var(--gray-400);
+  white-space: nowrap;
+}
+
+/* Progress */
+.progressInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 12px 0 10px;
+}
+
+.progressPct {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.progressLabel {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.progressBar {
+  height: 10px;
+  background: var(--gray-100);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--green) 100%);
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.progressHint {
+  font-size: 12px;
+  color: var(--gray-400);
+}
+
+/* Ranking */
+.rankList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rankItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  transition: background 0.15s;
+}
+
+.rankItem:hover {
+  background: var(--gray-50);
+}
+
+.rankTop {
+  background: var(--blue-bg);
+}
+
+.rankPos {
+  font-size: 16px;
+  width: 28px;
+  text-align: center;
+}
+
+.rankNome {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.rankVisitas {
+  font-size: 12px;
+  color: var(--gray-400);
+  font-weight: 600;
+}
+
+@media (max-width: 1280px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+}

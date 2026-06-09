@@ -1,0 +1,175 @@
+.pageTitle {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--gray-900);
+  margin-bottom: 28px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.profileCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-100);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarWrap {
+  margin-bottom: 6px;
+}
+
+.userName {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+
+.userEmail {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.memberSince {
+  font-size: 12px;
+  color: var(--gray-400);
+  background: var(--gray-50);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 4px;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.statBox {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-100);
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.statBox:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.statNum {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+
+.statLbl {
+  font-size: 13px;
+  color: var(--gray-500);
+  font-weight: 500;
+}
+
+.section {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-100);
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 16px;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--gray-50);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  text-align: center;
+  min-width: 120px;
+  border: 1px solid var(--gray-100);
+  transition: all 0.15s;
+}
+
+.badge:hover {
+  border-color: var(--blue);
+  background: var(--blue-bg);
+}
+
+.badgeIcon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.badgeLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-700);
+  margin-bottom: 3px;
+}
+
+.badgeDesc {
+  font-size: 11px;
+  color: var(--gray-400);
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.editActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .badges {
+    justify-content: center;
+  }
+}
