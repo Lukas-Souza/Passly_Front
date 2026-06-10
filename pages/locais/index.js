@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-// import { locaisService } from '../services/locaisService';
-import { mockLocais, mockCidades, mockCategorias } from '../services/mockData';
-import CardTuristico from '../components/CardTuristico';
-import { Loader, EmptyState } from '../components/Avatar';
-import { Input } from '../components/Avatar';
-import styles from '../styles/Locais.module.css';
+import { locaisService } from '../../services/locaisService';
+import { mockLocais, mockCidades, mockCategorias } from '../../services/mockData';
+import CardTuristico from '../../components/CardTuristico';
+import { Loader, EmptyState, Input } from '../../components/Avatar';
+import styles from '../../styles/Locais.module.css';
 
 export default function Locais() {
   const [busca, setBusca] = useState('');

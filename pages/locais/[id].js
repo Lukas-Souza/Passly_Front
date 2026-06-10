@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useQuery } from '@tanstack/react-query';
+import { locaisService } from '../../services/locaisService';
 import { mockLocais, mockVisitantes, mockAvaliacoes, mockArtefatos } from '../../services/mockData';
 import Avatar from '../../components/Avatar';
 import { RatingStars, Loader } from '../../components/Avatar';
