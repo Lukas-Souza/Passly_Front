@@ -82,10 +82,6 @@ export default function Perfil() {
               <div className={styles.statNum}>{p.avaliacoes || 7}</div>
               <div className={styles.statLbl}>⭐ Avaliações</div>
             </div>
-            <div className={styles.statBox}>
-              <div className={styles.statNum}>{p.artefatos || 4}</div>
-              <div className={styles.statLbl}>🎁 Artefatos</div>
-            </div>
           </div>
 
           {/* Badges */}
@@ -94,7 +90,7 @@ export default function Perfil() {
             <div className={styles.badges}>
               {[
                 { icon: '🥾', label: 'Primeiro passo', desc: 'Primeiro check-in' },
-                { icon: '🗺️', label: 'Explorador', desc: '5 locais visitados' },
+                { icon: '🗺️', label: 'Exploradar', desc: '5 locais visitados' },
                 { icon: '⭐', label: 'Avaliador', desc: 'Primeira avaliação' },
                 { icon: '🎁', label: 'Colecionador', desc: 'Primeiro artefato' },
               ].map(b => (

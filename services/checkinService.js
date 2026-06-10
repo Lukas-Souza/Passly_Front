@@ -7,7 +7,7 @@ export const checkinService = {
     // Buscar local pelo código nos dados mockados
     const local = mockLocais.find(l => l.codigoCheckin === codigo);
     if (!local) {
-      throw new Error('Código de check-in inválido');
+      throw new Error('Código de check-in inválido, ou não existe');
     }
     
     // Fazer check-in com idLocal e idUser

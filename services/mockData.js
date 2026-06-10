@@ -184,4 +184,4 @@ export const mockRanking = [
 ];
 
 export const mockCidades = ['Rio de Janeiro', 'Salvador', 'Foz do Iguaçu', 'Manaus', 'Barreirinhas'];
-export const mockCategorias = ['Monumento', 'Natureza', 'Histórico', 'Cultural', 'Praia', 'Gastronomia'];
+export const mockCategorias = ['Historico', 'Natureza', 'Histórico', 'Cultural', 'Praia', 'Gastronomia'];
