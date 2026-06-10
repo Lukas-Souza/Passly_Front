@@ -67,26 +67,11 @@ export default function Checkin() {
           </div>
           {error && <p className={styles.error}>{error}</p>}
           <Button type="submit" size="xl" loading={loading}>
-            ✅ Confirmar Check-in
+            Confirmar Check-in
           </Button>
         </form>
 
-        <div className={styles.hint}>
-          <div className={styles.hintItem}>
-            <span>🏷️</span>
-            <div>
-              <strong>Onde encontrar o código?</strong>
-              <p>Nos painéis informativos, bilheterias ou QR codes disponíveis no local.</p>
-            </div>
-          </div>
-          <div className={styles.hintItem}>
-            <span>🎁</span>
-            <div>
-              <strong>O que você ganha?</strong>
-              <p>Registro da visita, carimbo no passaporte e XP de viagem.</p>
-            </div>
-          </div>
-        </div>
+
 
         {/* Demo codes */}
         <div className={styles.demoCodes}>
